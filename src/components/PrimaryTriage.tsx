@@ -61,14 +61,14 @@ export default function PrimaryTriage() {
 						</AccordionItem>
 
 						<AccordionItem value="item-1" className="mx-2">
-							<AccordionTrigger>Critical First Look</AccordionTrigger>
+							<AccordionTrigger disabled={!isSafe}>Critical First Look</AccordionTrigger>
 							<AccordionContent>
 								<CriticalFirstLook />
 							</AccordionContent>
 						</AccordionItem>
 
 						<AccordionItem value="item-2" className="mx-2">
-							<AccordionTrigger>Rapid Assessment</AccordionTrigger>
+							<AccordionTrigger disabled={!isSafe}>Rapid Assessment</AccordionTrigger>
 							<AccordionContent>
 								<RapidAssessment />
 							</AccordionContent>
@@ -89,16 +89,16 @@ export default function PrimaryTriage() {
 						</AccordionItem>
 
 						<AccordionItem value="item-1" className="mx-2">
-							<AccordionTrigger>Critical First Look</AccordionTrigger>
+							<AccordionTrigger disabled={!isSafe}>Critical First Look</AccordionTrigger>
 							<AccordionContent>
-								Yes. It adheres to the WAI-ARIA design pattern.
+								Pending.
 							</AccordionContent>
 						</AccordionItem>
 
 						<AccordionItem value="item-2" className="mx-2">
-							<AccordionTrigger>Paediatric Assessment Triangle</AccordionTrigger>
+							<AccordionTrigger disabled={isSafe}>Paediatric Assessment Triangle</AccordionTrigger>
 							<AccordionContent>
-								Yes. It comes with default styles that matches the other components&apos; aesthetic.
+								Pending.
 							</AccordionContent>
 						</AccordionItem>
 

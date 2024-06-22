@@ -36,18 +36,18 @@ export const Safety: React.FC = () => {
 		}
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isInfectious, isHazardous, isViolent])
-	
+
 	return (
 		<div className="flex justify-center flex-col items-center">
 		
-			<div className="w-[70%]">
-			<Carousel className="w-full max-w-xs">
+			<div>
+			<Carousel className="w-full max-w-xs min-w-xs">
       			<CarouselContent>
           
 		  			<CarouselItem>
             			<div className="p-1">
               				<Card>
-                				<CardContent className="flex flex-col aspect-square items-center justify-between p-4">
+                				<CardContent className="flex flex-col aspect-square items-center justify-between p-6">
                   					<span className="text-2xl font-semibold">Infection</span>
 									<div>Any suspicion of transmissible diseases - Influenza, Covid, Active TB, Meningococcemia, CRE/MRSA, Ebola </div>
 				  					<div className="flex items-center space-x-2">
@@ -64,7 +64,7 @@ export const Safety: React.FC = () => {
 					  <CarouselItem>
             			<div className="p-1">
               				<Card>
-                				<CardContent className="flex flex-col aspect-square items-center justify-between p-4">
+                				<CardContent className="flex flex-col aspect-square items-center justify-between p-6">
                   					<span className="text-2xl font-semibold">Hazard</span>
 									<div>Any evidence or suspicion of dry, liquid or inhaled chemicals, radioactive exposure. </div>
 
@@ -82,7 +82,7 @@ export const Safety: React.FC = () => {
 					  <CarouselItem>
             			<div className="p-1">
               				<Card>
-                				<CardContent className="flex flex-col aspect-square items-center justify-between p-4">
+                				<CardContent className="flex flex-col aspect-square items-center justify-between p-6">
                   					<span className="text-2xl font-semibold">Violence</span>
 									<div> Any hints of aggression, violents, suspicion or evidence of weapons.</div>
 
