@@ -34,7 +34,9 @@ export const Safety: React.FC = () => {
 			setIsSafe(true)
 			setSafe(false)
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isInfectious, isHazardous, isViolent])
+	
 	return (
 		<div className="flex justify-center flex-col items-center">
 		

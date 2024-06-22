@@ -33,7 +33,7 @@ export default function BleedingAssessment() {
 		<div className="p-2">
 		<RadioGroup defaultValue={getCurrentValue()} onValueChange={(index) => handleValue(index)}>
 			{ criteria.map((item) => (
-				<div className="flex items-center space-x-2">
+				<div key={item.id} className="flex items-center space-x-2">
    				<RadioGroupItem value={item.name} />
 				<Label htmlFor={item.name}>{item.name}</Label>
   				</div>

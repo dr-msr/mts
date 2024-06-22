@@ -55,12 +55,12 @@ export default function RespiAssessment() {
 
 	return (
 	<div>
-		<div>Assess the patient's breathing pattern and sPO2 measurement: </div>
+		<div>Assess the breathing pattern and sPO2 measurement: </div>
 		<div className="p-2">
 			Breathing pattern : 
 			<RadioGroup defaultValue={getCurrentValueBreathing()} onValueChange={(value) => handleValueBreathing(value)} className="p-2">
 			{ criteria_breathing.map((item) => (
-				<div className="flex items-center space-x-2">
+				<div key={item.id} className="flex items-center space-x-2">
    				<RadioGroupItem value={item.name} />
 				<Label htmlFor={item.name}>{item.name}</Label>
   				</div>
@@ -71,7 +71,7 @@ export default function RespiAssessment() {
 			SpO2 Value : 
 			<RadioGroup defaultValue={getCurrentValueSPO2()} onValueChange={(value) => handleValueSPO2(value)} className="p-2">
 			{ criteria_spo2.map((item) => (
-				<div className="flex items-center space-x-2">
+				<div key={item.id} className="flex items-center space-x-2">
    				<RadioGroupItem value={item.name} />
 				<Label htmlFor={item.name}>{item.name}</Label>
   				</div>
